@@ -1,0 +1,49 @@
+<!DOCTYPE >
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карточка пользователя</title>
+    <style>
+        .card {
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .card h2 {
+            margin: 10px 0;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .card p {
+            margin: 5px 0;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Фото пользователя">
+        <h2>Меренчук Михаил Васильевич</h2>
+        <p>Email: merenchuko@gmail.com</p>
+        <p>Дата рождения: 25.01.1967</p>
+        <p>Город: Ейск</p>
+    </div>
+</body>
+</html>
