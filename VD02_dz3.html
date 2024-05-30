@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карточка пользователя</title>
+    <style>
+        @keyframes backgroundChange {
+            0%, 100% { background-color: white; }
+            33% { background-color: #0033a0; } /* Синий цвет */
+            66% { background-color: #d52b1e; } /* Красный цвет */
+        }
+
+        .card {
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 0px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: backgroundChange 10s infinite;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Emblem_of_the_Ministry_of_Internal_Affairs_of_Russia.svg/200px-Emblem_of_the_Ministry_of_Internal_Affairs_of_Russia.svg.png');
+            background-size: 100px;
+            background-repeat: no-repeat;
+            background-position: center;
+             text-align: center; /* Добавлено для выравнивания текста по центру */
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10%;
+        }
+
+        .card h2 {
+            margin: 10px 0;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .card p {
+            margin: 5px 0;
+            color: #666;
+        }
+
+        .field {
+            font-weight: bold;
+        }
+
+        .value {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="sol.png" alt="Фото пользователя">
+        <h2 center>Юрий Алексеевич Соловьев</h2>
+        <p><span class="field">Email:</span> <span class="value">solo_taktiko67@gmail.com</span></p>
+        <p><span class="field">Дата рождения:</span> <span class="value">22.10.1967</span></p>
+        <p><span class="field">Город:</span> <span class="value">Ейск</span></p>
+        <p><span class="field">Отдел УВД:</span> <span class="ЕФСО"></span></p>
+        <p><span class="field">Должность:</span> <span class="Зам. нач. отдела">Ейск</span></p>
+
+    </div>
+</body>
+</html>
